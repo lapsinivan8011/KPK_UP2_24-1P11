@@ -39,7 +39,7 @@ class Subject(BaseModel):
     semester = IntegerField(null=False)
 
 class Hours(BaseModel):
-    """Класс часов по дисциплине"""
+    """Класс часов дисциплины"""
 
     id = AutoField()
     subject = ForeignKeyField(
