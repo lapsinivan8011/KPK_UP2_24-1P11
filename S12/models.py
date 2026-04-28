@@ -1,4 +1,4 @@
-"""База данных Curriculum Plan"""
+""База данных Curriculum Plan"""
 
 from peewee import (
     Model,
@@ -22,7 +22,7 @@ class CurriculumPlan(BaseModel):
 
     id = AutoField()
     name = CharField(null=False)
-    speciality = CharField(null=False)
+    speciality_id = IntegerField(null=False)
     year = IntegerField(null=False)
 
 class Subject(BaseModel):
